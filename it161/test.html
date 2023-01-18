@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT-161 Test Web Page by Nam Le</title>
+    <style>
+      img {
+        float: left;
+        margin: 1em;
+      }
+      a {
+        color: cyan;
+      }
+      a:hover {
+        color: red;
+        background-color: fuchsia;
+      }
+      footer {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>IT-161 FTP and test Assignment - Nam Le</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="http://www.w3.org/" target="_blank">W3C Website</a>
+          </li>
+          <li>
+            <a href="http://www.whatwg.org" target="_blank">WHATWG Community</a>
+          </li>
+          <li>
+            <a href="http://www.w3schools.com" target="_blank">W3School Site</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <img src="images/monkey.jpg" alt="Picture of Monke" />
+    <p>
+      This is a test html page for IT-161 W2023 Quarter, by Nam Le.
+      <br />Some tags that isn't in the lesson is also used to see how they
+      work.
+    </p>
+    <!--Bellow is the footer, script (code copied from Canvas as instructed)-->
+    <footer>
+      <p>
+        <small
+          >&copy; 2022 by NAM HOANG LE, All Rights Reserved ~
+          <a id="html-checker" href="#">Check HTML</a> ~
+          <a id="css-checker" href="#">Check CSS</a></small
+        >
+      </p>
+    </footer>
+    <script>
+      //https://tinyurl.com/dynamic-html-checker
+      document
+        .getElementById("html-checker")
+        .setAttribute(
+          "href",
+          "https://validator.w3.org/nu/?doc=" + location.href
+        );
+
+      document
+        .getElementById("css-checker")
+        .setAttribute(
+          "href",
+          "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href
+        );
+    </script>
+  </body>
+</html>
